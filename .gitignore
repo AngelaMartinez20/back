@@ -2,4 +2,3 @@
 *.js
 *.env
 /frontend
-/dist

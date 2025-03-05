@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="/css/admin.css">
+</head>
+<body>
+    <h1>Bienvenido, <%= user.email %></h1>
+    <h2>Gestión de Usuarios</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Usuario</th>
+                <th>Rol</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="usersTable">
+            <!-- La tabla se llena dinámicamente con JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        async function loadUsers() {
+            const response = await fetch('/admin/users', {
+                headers: { 'Authorization': 'Bearer ' + localStorage.getItem('token') }
+            });
+            const users = await response.json();
+
+            const table = document.getElementById('usersTable');
+            table.innerHTML = '';
+
+            users.forEach(user => {
+                const row = `<tr>
+                    <td>${user.id}</td>
+                    <td>${user.email}</td>
+                    <td>${user.username}</td>
+                    <td>
+                        <select onchange="changeRole(${user.id}, this.value)">
+                            <option value="usuario" ${user.role === 'usuario' ? 'selected' : ''}>Usuario</option>
+                            <option value="cajero" ${user.role === 'cajero' ? 'selected' : ''}>Cajero</option>
+                            <option value="mantenimiento" ${user.role === 'mantenimiento' ? 'selected' : ''}>Mantenimiento</option>
+                            <option value="admin" ${user.role === 'admin' ? 'selected' : ''}>Admin</option>
+                        </select>
+                    </td>
+                    <td>
+                        <button onclick="deleteUser(${user.id})">Eliminar</button>
+                    </td>
+                </tr>`;
+                table.innerHTML += row;
+            });
+        }
+
+        async function changeRole(userId, newRole) {
+            try {
+                const response = await fetch('/admin/users/role', {
+                    method: 'PUT',
+                    headers: { 
+                        'Authorization': 'Bearer ' + localStorage.getItem('token'),
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ id: userId, role: newRole })
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    alert('Rol actualizado correctamente');
+                } else {
+                    alert(`Error: ${data.message}`);
+                }
+            } catch (error) {
+                console.error('Error al actualizar el rol:', error);
+            }
+        }
+
+        async function deleteUser(userId) {
+            if (confirm('¿Seguro que quieres eliminar este usuario?')) {
+                await fetch(`/admin/users/${userId}`, {
+                    method: 'DELETE',
+                    headers: { 'Authorization': 'Bearer ' + localStorage.getItem('token') }
+                });
+                loadUsers();
+            }
+        }
+
+        loadUsers(); // Cargar usuarios al abrir la página
+    </script>
+</body>
+</html>
