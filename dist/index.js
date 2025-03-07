@@ -21,9 +21,9 @@ if (!process.env.JWT_SECRET) {
 // 📌 Crear la aplicación de Express
 const app = (0, express_1.default)();
 app.use((0, cors_1.default)({
-    origin: ['http://localhost:3000', 'http://localhost:5173'], // ✅ Permitir peticiones desde el frontend
-    credentials: true, // ✅ Permitir cookies y autenticación
-    allowedHeaders: ['Authorization', 'Content-Type'], // ✅ Permitir headers
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y.vercel.app'], // ✅ Agregar Vercel
+    credentials: true, // ✅ Permitir autenticación y cookies
+    allowedHeaders: ['Authorization', 'Content-Type'], // ✅ Permitir headers específicos
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // ✅ Métodos permitidos
 }));
 // 📌 Middlewares para procesar datos correctamente
@@ -49,9 +49,9 @@ app.use((err, req, res, next) => {
     console.error('❌ Error en el servidor:', err.stack);
     res.status(500).send('⚠️ Algo salió mal. Por favor, intenta más tarde.');
 });
-// 📌 Iniciar el servidor
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-    console.log(`🚀 Servidor corriendo en http://localhost:${PORT}`);
-    console.log(`📂 Archivos disponibles en: http://localhost:${PORT}/uploads/`);
+    const serverUrl = process.env.RENDER_EXTERNAL_URL || `http://localhost:${PORT}`;
+    console.log(`🚀 Servidor corriendo en: ${serverUrl}`);
+    console.log(`📂 Archivos disponibles en: ${serverUrl}/uploads/`);
 });

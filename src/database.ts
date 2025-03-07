@@ -10,11 +10,13 @@ export const pool = new Pool({
     password: process.env.DB_PASSWORD || '',
     database: process.env.DB_NAME || 'gym',
     port: parseInt(process.env.DB_PORT || '5432'),
+    ssl: { rejectUnauthorized: false }  // 🚀 NECESARIO PARA RENDER
 });
+
 pool.connect()
     .then(() => {
-        console.log('Connected to the database');
+        console.log('✅ Connected to the database');
     })
     .catch((err) => {
-        console.error('Database connection failed', err);
+        console.error('❌ Database connection failed:', err);
     });
