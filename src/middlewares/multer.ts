@@ -1,21 +1,29 @@
 import multer from 'multer';
 import path from 'path';
 import fs from 'fs';
+import logger from '../logs/logger'; // Importar Pino
+
 
 // 📌 Verificar que la carpeta `uploads/` exista, si no, crearla
 const uploadDir = 'uploads/';
 if (!fs.existsSync(uploadDir)) {
+  logger.info(`📂 Carpeta de subida creada en: ${uploadDir}`);
   fs.mkdirSync(uploadDir, { recursive: true });
+} else {
+  logger.info(`📂 Carpeta de subida ya existe: ${uploadDir}`);
 }
 
 // ✅ Configuración del almacenamiento
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, uploadDir); // 📌 Se asegura que `uploads/` existe
+    logger.info(`📁 Archivo recibido para guardar en: ${uploadDir}`);
   },
   filename: (req, file, cb) => {
     // 🔹 Reemplazar caracteres peligrosos en el nombre del archivo
     const safeFileName = file.originalname.replace(/[^a-zA-Z0-9.-]/g, '_');
+    const finalFileName = `${Date.now()}-${safeFileName}`;
+    logger.info(`✅ Nombre del archivo guardado: ${finalFileName}`);
     cb(null, `${Date.now()}-${safeFileName}`);
   },
 });
@@ -26,13 +34,14 @@ const fileFilter = (req: Express.Request, file: Express.Multer.File, cb: multer.
     const allowedTypes = ['image/jpeg', 'image/png', 'image/gif', 'video/mp4', 'video/quicktime'];
 
     if (allowedTypes.includes(file.mimetype)) {
+      logger.info(`✅ Archivo aceptado: ${file.originalname} (${file.mimetype})`);
       cb(null, true); // ✅ Archivo permitido
     } else {
-      console.error("❌ Archivo rechazado:", file.mimetype);
+      logger.warn(`🚫 Archivo rechazado: ${file.originalname} (${file.mimetype})`);
       cb(null, false); // ✅ En lugar de pasar `Error`, pasamos `null, false`
     }
   } catch (error) {
-    console.error("❌ Error en fileFilter:", error);
+    logger.error("❌ Error en fileFilter:", error);
     cb(null, false); // ✅ Manejo seguro del error
   }
 };

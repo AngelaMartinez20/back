@@ -4,6 +4,8 @@ import { pool } from '../database';
 import { validarReporte, manejarErroresValidacion } from '../middlewares/validaciones';
 import { authenticateUser, authorizeRoles } from '../middlewares/authenticateUser';
 import { reporteInstalaciones, reporteSituaciones, reporteTrabajadores } from '../controllers/reportesController';
+import logger from '../logs/logger'; // Importar Pino
+
 
 const router = express.Router();
 
@@ -13,7 +15,7 @@ router.get('/reportes/instalaciones', authenticateUser, authorizeRoles('mantenim
     const result = await pool.query('SELECT * FROM reportes WHERE tipo = $1 ORDER BY fecha DESC', ['instalaciones']);
     res.json(result.rows);
   } catch (error) {
-    console.error('❌ Error al obtener reportes:', error);
+    logger.error('❌ Error al obtener reportes:', error);
     res.status(500).json({ message: 'Error interno del servidor' });
   }
 });

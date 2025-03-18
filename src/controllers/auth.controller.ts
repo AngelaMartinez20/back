@@ -2,6 +2,8 @@ import { Request, Response } from 'express';
 import { pool } from '../database';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
+import logger from '../logs/logger';
+
 
 // Definir estructura del usuario
 interface User {
@@ -46,6 +48,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
         // Verifica que los campos no sean undefined o vacíos
         if (!email || !password) {
+            logger.warn('Intento de login con datos incompletos');
             res.status(400).json({ message: 'Email y contraseña son obligatorios' });
             return;
         }
@@ -54,6 +57,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
 
         // Verificar si el usuario tiene intentos bloqueados
         if (await checkLoginAttempts(normalizedEmail)) {
+            logger.warn(`Cuenta bloqueada por intentos fallidos: ${normalizedEmail}`);
             res.status(429).json({ message: 'Cuenta bloqueada por intentos fallidos. Intenta más tarde.' });
             return;
         }
@@ -61,6 +65,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
         // Consulta a la base de datos para verificar si el usuario existe
         const response = await pool.query('SELECT * FROM users WHERE email = $1', [normalizedEmail]);
         if (response.rows.length === 0) {
+            logger.warn(`Intento de login con correo inexistente: ${normalizedEmail}`);
             res.status(404).json({ message: 'Usuario no encontrado' });
             return;
         }
@@ -73,6 +78,7 @@ export const login = async (req: Request, res: Response): Promise<void> => {
             const attempts = loginAttempts.get(normalizedEmail) || { count: 0, lastAttempt: Date.now() };
             loginAttempts.set(normalizedEmail, { count: attempts.count + 1, lastAttempt: Date.now() });
 
+            logger.warn(`Intento de login fallido para ${normalizedEmail} - Intento #${attempts.count + 1}`);
             res.status(401).json({ message: 'Credenciales inválidas' });
             return;
         }
@@ -86,6 +92,8 @@ export const login = async (req: Request, res: Response): Promise<void> => {
             JWT_SECRET as string,
             { expiresIn: '1h' }  // Token válido por 1 hora
         );
+
+        logger.info(`Inicio de sesión exitoso para ${normalizedEmail}`);
 
         // Respuesta con el token y los datos del usuario
         res.status(200).json({
@@ -106,6 +114,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
     try {
         // Validar campos
         if (!email || !username || !password) {
+            logger.warn('Intento de registro con datos incompletos');
             res.status(400).json({ message: 'Todos los campos son obligatorios' });
             return;
         }
@@ -115,6 +124,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
 
         // Validar longitud de la contraseña
         if (password.length < 6) {
+            logger.warn(`Registro fallido: contraseña demasiado corta para ${email}`);
             res.status(400).json({ message: 'La contraseña debe tener al menos 6 caracteres' });
             return;
         }
@@ -122,6 +132,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
         // Verificar si el usuario ya existe
         const userExists = await pool.query('SELECT id FROM users WHERE email = $1', [email]);
         if (userExists.rows.length > 0) {
+            logger.warn(`Intento de registro con correo ya existente: ${email}`);
             res.status(400).json({ message: 'El correo ya está registrado' });
             return;
         }
@@ -135,6 +146,7 @@ export const register = async (req: Request, res: Response): Promise<void> => {
             [email, username, hashedPassword, 'usuario']  // Asignamos rol "usuario" por defecto
         );
 
+        logger.info(`Nuevo usuario registrado: ${email}`);
         res.status(201).json({ message: 'Usuario registrado con éxito' });
     } catch (error) {
         console.error(error);

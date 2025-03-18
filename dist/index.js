@@ -20,15 +20,15 @@ if (!process.env.JWT_SECRET) {
 }
 // 📌 Crear la aplicación de Express
 const app = (0, express_1.default)();
+app.set('trust proxy', 1); // ✅ Soluciona el problema con express-rate-limit
 app.use((0, cors_1.default)({
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y.vercel.app'], // ✅ Agregar Vercel
-    credentials: true, // ✅ Permitir autenticación y cookies
-    allowedHeaders: ['Authorization', 'Content-Type'], // ✅ Permitir headers específicos
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // ✅ Métodos permitidos
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y.vercel.app'],
+    credentials: true,
+    allowedHeaders: ['Authorization', 'Content-Type'],
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
-// 📌 Middlewares para procesar datos correctamente
-app.use(express_1.default.json()); // ✅ Permitir JSON en las solicitudes
-app.use(express_1.default.urlencoded({ extended: false })); // ✅ Permitir formularios
+app.use(express_1.default.json());
+app.use(express_1.default.urlencoded({ extended: false }));
 // 📌 Servir archivos estáticos (IMPORTANTE para que funcionen las imágenes)
 const uploadsPath = path_1.default.resolve(__dirname, '../uploads');
 app.use('/uploads', express_1.default.static(uploadsPath));

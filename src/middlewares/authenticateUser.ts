@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import rateLimit from 'express-rate-limit';
 import dotenv from 'dotenv';
+import logger from '../logs/logger'; // Importar Pino
+
 
 dotenv.config();
 
@@ -51,6 +53,7 @@ export const authenticateUser = async (req: Request, res: Response, next: NextFu
     try {
         const decoded = jwt.verify(token, JWT_SECRET) as UserPayload;
         req.user = decoded;
+        logger.info(`✅ Acceso permitido para usuario ${decoded.email} con rol ${decoded.role}`);
         next();
     } catch (error) {
         logUnauthorizedAccess(req, 'Token inválido o expirado');
@@ -71,7 +74,7 @@ export const authorizeRoles = (...allowedRoles: string[]) => {
             res.status(403).json({ message: 'No tienes permisos para realizar esta acción.' });
             return;
         }
-
+        logger.info(`✅ Usuario ${req.user.email} con rol ${req.user.role} accedió correctamente`);
         next();
     };
 };
@@ -82,14 +85,19 @@ export const loginLimiter = rateLimit({
     max: 5, // Máximo de intentos de login por IP
     message: '⚠️ Demasiados intentos de acceso. Intenta nuevamente más tarde.',
     headers: true,
+    handler: (req, res) => {
+        logger.warn(`🚫 Demasiados intentos de login desde IP ${req.ip}`);
+        res.status(429).json({ message: 'Demasiados intentos de acceso. Intenta nuevamente más tarde.' });
+    }
 });
 
 // ✅ Función para revocar tokens (Logout seguro)
 export const revokeToken = (token: string) => {
     blacklistedTokens.add(token);
+    logger.info(`🔒 Token revocado`);
 };
 
 // ✅ Función para registrar accesos no autorizados
 const logUnauthorizedAccess = (req: Request, reason: string) => {
-    console.warn(`❌ Acceso no autorizado desde ${req.ip} - Motivo: ${reason}`);
+    logger.warn(`❌ Acceso no autorizado desde ${req.ip} - Motivo: ${reason}`);
 };
