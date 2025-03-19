@@ -27,24 +27,14 @@ app.set('trust proxy', 1); // ✅ Soluciona el problema con express-rate-limit
 
 
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y-nyqrljdh6-angelas-projects-a3fd7f7d.vercel.app'],
-    credentials: true,
-    allowedHeaders: ['Authorization', 'Content-Type'],
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-    optionsSuccessStatus: 204, // ✅ Evita problemas con preflight
-  }));
-  
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y.vercel.app'], 
+  credentials: true,
+  allowedHeaders: ['Authorization', 'Content-Type'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-
-app.options('*', (req, res) => {
-    res.header('Access-Control-Allow-Origin', req.headers.origin || '*');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Authorization, Content-Type');
-    res.sendStatus(204); // No devuelve contenido
-  });
-  
 
 // 📌 Middleware de Morgan para registrar todas las solicitudes HTTP
 app.use(morganMiddleware);
