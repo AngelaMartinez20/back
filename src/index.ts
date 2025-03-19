@@ -27,8 +27,8 @@ app.set('trust proxy', 1); // ✅ Soluciona el problema con express-rate-limit
 
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173', 'frontend-1w8y-nyqrljdh6-angelas-projects-a3fd7f7d.vercel.app'], 
-  credentials: true,
+    origin: ['http://localhost:3000', 'http://localhost:5173', 'https://frontend-1w8y-nyqrljdh6-angelas-projects-a3fd7f7d.vercel.app'],
+    credentials: true,
   allowedHeaders: ['Authorization', 'Content-Type'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
