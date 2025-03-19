@@ -18,6 +18,7 @@ const database_1 = require("../database");
 const validaciones_1 = require("../middlewares/validaciones");
 const authenticateUser_1 = require("../middlewares/authenticateUser");
 const reportesController_1 = require("../controllers/reportesController");
+const logger_1 = __importDefault(require("../logs/logger")); // Importar Pino
 const router = express_1.default.Router();
 // ✅ Obtener reportes de instalaciones (Solo usuarios autenticados con rol "mantenimiento")
 router.get('/reportes/instalaciones', authenticateUser_1.authenticateUser, (0, authenticateUser_1.authorizeRoles)('mantenimiento'), (req, res) => __awaiter(void 0, void 0, void 0, function* () {
@@ -26,7 +27,7 @@ router.get('/reportes/instalaciones', authenticateUser_1.authenticateUser, (0, a
         res.json(result.rows);
     }
     catch (error) {
-        console.error('❌ Error al obtener reportes:', error);
+        logger_1.default.error('❌ Error al obtener reportes:', error);
         res.status(500).json({ message: 'Error interno del servidor' });
     }
 }));

@@ -16,6 +16,7 @@ exports.revokeToken = exports.loginLimiter = exports.authorizeRoles = exports.au
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const express_rate_limit_1 = __importDefault(require("express-rate-limit"));
 const dotenv_1 = __importDefault(require("dotenv"));
+const logger_1 = __importDefault(require("../logs/logger")); // Importar Pino
 dotenv_1.default.config();
 const JWT_SECRET = process.env.JWT_SECRET;
 const TOKEN_EXPIRATION = '1h';
@@ -42,6 +43,7 @@ const authenticateUser = (req, res, next) => __awaiter(void 0, void 0, void 0, f
     try {
         const decoded = jsonwebtoken_1.default.verify(token, JWT_SECRET);
         req.user = decoded;
+        logger_1.default.info(`✅ Acceso permitido para usuario ${decoded.email} con rol ${decoded.role}`);
         next();
     }
     catch (error) {
@@ -62,6 +64,7 @@ const authorizeRoles = (...allowedRoles) => {
             res.status(403).json({ message: 'No tienes permisos para realizar esta acción.' });
             return;
         }
+        logger_1.default.info(`✅ Usuario ${req.user.email} con rol ${req.user.role} accedió correctamente`);
         next();
     });
 };
@@ -72,13 +75,18 @@ exports.loginLimiter = (0, express_rate_limit_1.default)({
     max: 5, // Máximo de intentos de login por IP
     message: '⚠️ Demasiados intentos de acceso. Intenta nuevamente más tarde.',
     headers: true,
+    handler: (req, res) => {
+        logger_1.default.warn(`🚫 Demasiados intentos de login desde IP ${req.ip}`);
+        res.status(429).json({ message: 'Demasiados intentos de acceso. Intenta nuevamente más tarde.' });
+    }
 });
 // ✅ Función para revocar tokens (Logout seguro)
 const revokeToken = (token) => {
     blacklistedTokens.add(token);
+    logger_1.default.info(`🔒 Token revocado`);
 };
 exports.revokeToken = revokeToken;
 // ✅ Función para registrar accesos no autorizados
 const logUnauthorizedAccess = (req, reason) => {
-    console.warn(`❌ Acceso no autorizado desde ${req.ip} - Motivo: ${reason}`);
+    logger_1.default.warn(`❌ Acceso no autorizado desde ${req.ip} - Motivo: ${reason}`);
 };

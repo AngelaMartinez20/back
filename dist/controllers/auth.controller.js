@@ -16,6 +16,7 @@ exports.register = exports.login = void 0;
 const database_1 = require("../database");
 const bcrypt_1 = __importDefault(require("bcrypt"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
+const logger_1 = __importDefault(require("../logs/logger"));
 const JWT_SECRET = process.env.JWT_SECRET;
 if (!JWT_SECRET) {
     throw new Error('Falta configurar JWT_SECRET en el archivo .env');
@@ -42,18 +43,21 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         const { email, password } = req.body;
         // Verifica que los campos no sean undefined o vacíos
         if (!email || !password) {
+            logger_1.default.warn('Intento de login con datos incompletos');
             res.status(400).json({ message: 'Email y contraseña son obligatorios' });
             return;
         }
         const normalizedEmail = email.trim().toLowerCase();
         // Verificar si el usuario tiene intentos bloqueados
         if (yield checkLoginAttempts(normalizedEmail)) {
+            logger_1.default.warn(`Cuenta bloqueada por intentos fallidos: ${normalizedEmail}`);
             res.status(429).json({ message: 'Cuenta bloqueada por intentos fallidos. Intenta más tarde.' });
             return;
         }
         // Consulta a la base de datos para verificar si el usuario existe
         const response = yield database_1.pool.query('SELECT * FROM users WHERE email = $1', [normalizedEmail]);
         if (response.rows.length === 0) {
+            logger_1.default.warn(`Intento de login con correo inexistente: ${normalizedEmail}`);
             res.status(404).json({ message: 'Usuario no encontrado' });
             return;
         }
@@ -63,6 +67,7 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
             // Registrar intento fallido
             const attempts = loginAttempts.get(normalizedEmail) || { count: 0, lastAttempt: Date.now() };
             loginAttempts.set(normalizedEmail, { count: attempts.count + 1, lastAttempt: Date.now() });
+            logger_1.default.warn(`Intento de login fallido para ${normalizedEmail} - Intento #${attempts.count + 1}`);
             res.status(401).json({ message: 'Credenciales inválidas' });
             return;
         }
@@ -71,6 +76,7 @@ const login = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         // Generación del token JWT
         const token = jsonwebtoken_1.default.sign({ id: user.id, email: user.email, role: user.role }, JWT_SECRET, { expiresIn: '1h' } // Token válido por 1 hora
         );
+        logger_1.default.info(`Inicio de sesión exitoso para ${normalizedEmail}`);
         // Respuesta con el token y los datos del usuario
         res.status(200).json({
             message: 'Inicio de sesión exitoso',
@@ -90,6 +96,7 @@ const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // Validar campos
         if (!email || !username || !password) {
+            logger_1.default.warn('Intento de registro con datos incompletos');
             res.status(400).json({ message: 'Todos los campos son obligatorios' });
             return;
         }
@@ -97,12 +104,14 @@ const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         username = username.trim();
         // Validar longitud de la contraseña
         if (password.length < 6) {
+            logger_1.default.warn(`Registro fallido: contraseña demasiado corta para ${email}`);
             res.status(400).json({ message: 'La contraseña debe tener al menos 6 caracteres' });
             return;
         }
         // Verificar si el usuario ya existe
         const userExists = yield database_1.pool.query('SELECT id FROM users WHERE email = $1', [email]);
         if (userExists.rows.length > 0) {
+            logger_1.default.warn(`Intento de registro con correo ya existente: ${email}`);
             res.status(400).json({ message: 'El correo ya está registrado' });
             return;
         }
@@ -111,6 +120,7 @@ const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
         // Insertar usuario en la base de datos
         yield database_1.pool.query('INSERT INTO users (email, username, password, role) VALUES ($1, $2, $3, $4)', [email, username, hashedPassword, 'usuario'] // Asignamos rol "usuario" por defecto
         );
+        logger_1.default.info(`Nuevo usuario registrado: ${email}`);
         res.status(201).json({ message: 'Usuario registrado con éxito' });
     }
     catch (error) {

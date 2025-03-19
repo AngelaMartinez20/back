@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.pool = void 0;
 const pg_1 = require("pg");
 const dotenv_1 = __importDefault(require("dotenv"));
+const logger_1 = __importDefault(require("./logs/logger")); // Importar Pino
 // Cargar las variables de entorno desde el archivo .env
 dotenv_1.default.config();
 exports.pool = new pg_1.Pool({
@@ -18,8 +19,8 @@ exports.pool = new pg_1.Pool({
 });
 exports.pool.connect()
     .then(() => {
-    console.log('✅ Connected to the database');
+    logger_1.default.info('✅ Conectado a la base de datos');
 })
     .catch((err) => {
-    console.error('❌ Database connection failed:', err);
+    logger_1.default.error('❌ Error en la conexión a la base de datos:', err);
 });

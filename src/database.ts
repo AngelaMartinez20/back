@@ -1,6 +1,6 @@
 import { Pool } from 'pg';
 import dotenv from 'dotenv';
-import logger from '../src/logs/logger'; // Importar Pino
+import logger from './logs/logger'; // Importar Pino
 
 // Cargar las variables de entorno desde el archivo .env
 dotenv.config();
