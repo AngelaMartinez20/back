@@ -1,31 +1,42 @@
 import pino from 'pino';
+import path from 'path';
+import fs from 'fs';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-let logFilePath: string | undefined = undefined;
+const targets: pino.TransportTargetOptions[] = [
+  {
+    target: 'pino-pretty',
+    options: {
+      colorize: true,
+      translateTime: 'HH:MM:ss Z'
+    },
+    level: 'info'
+  }
+];
 
-// 📌 Usar `import()` dinámico solo en Node.js para evitar problemas en Vite
-if (typeof process !== 'undefined' && !isProduction) {
-  import('path').then((path) => {
-    logFilePath = path.join(__dirname, 'historial.log');
+if (!isProduction) {
+  // Solo en desarrollo, guardamos en archivo
+  const logDirectory = path.join(__dirname, 'logs');
+  if (!fs.existsSync(logDirectory)) {
+    fs.mkdirSync(logDirectory);
+  }
+
+  targets.push({
+    target: 'pino/file',
+    options: {
+      destination: path.join(logDirectory, 'historial.log'),
+      mkdir: true
+    },
+    level: 'info'
   });
 }
 
-// 📌 Configurar el logger con transporte dual (archivo + consola)
 const logger = pino({
   transport: {
-    targets: [
-      {
-        target: 'pino-pretty', // 📺 Formato bonito en consola
-        options: { colorize: true, translateTime: 'HH:MM:ss Z' }
-      },
-      ...(logFilePath ? [{ // 📂 Guardar logs en un archivo solo si NO es producción
-        target: 'pino/file',
-        options: { destination: logFilePath, mkdir: true }
-      }] : [])
-    ]
+    targets
   },
-  level: 'info' // 📌 Puedes cambiar a 'debug' en desarrollo si necesitas más detalles
+  level: 'info'
 });
 
 export default logger;
