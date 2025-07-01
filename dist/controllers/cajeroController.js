@@ -30,7 +30,7 @@ const registrarPago = (req, res) => __awaiter(void 0, void 0, void 0, function* 
             return;
         }
         let cambio = null;
-        let montoRecibidoDB = null; // ✅ Para guardar `NULL` en la base de datos si es tarjeta
+        let montoRecibidoDB = null;
         if (metodo_pago === 'efectivo') {
             if (!monto_recibido || monto_recibido < monto) {
                 logger_1.default.warn('❌ Monto recibido insuficiente', { monto_recibido });
@@ -42,32 +42,38 @@ const registrarPago = (req, res) => __awaiter(void 0, void 0, void 0, function* 
         }
         logger_1.default.info('✅ Guardando en la base de datos...');
         const result = yield database_1.pool.query(`INSERT INTO pagos_gym (nombre_cliente, correo, telefono, metodo_pago, monto, monto_recibido, cambio) 
-        VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING id, nombre_cliente, correo, telefono, metodo_pago, monto, monto_recibido, cambio, fecha`, [nombre_cliente, correo, telefono, metodo_pago, monto, montoRecibidoDB, cambio]);
-        logger_1.default.info('✅ Pago registrado', { pago: result.rows[0] });
-        if (!result.rows[0].id) {
-            logger_1.default.error('❌ Error: La base de datos no devolvió un ID para el pago registrado.');
-            res.status(500).json({ message: 'Error interno: No se pudo recuperar el ID del pago.' });
+          VALUES ($1, $2, $3, $4, $5, $6, $7) 
+          RETURNING id, nombre_cliente, correo, telefono, metodo_pago, monto, monto_recibido, cambio, fecha`, [nombre_cliente, correo, telefono, metodo_pago, monto, montoRecibidoDB, cambio]);
+        if (!result.rows[0]) {
+            logger_1.default.error('❌ Error: No se pudo recuperar el pago registrado.');
+            res.status(500).json({ message: 'Error interno: No se pudo recuperar el pago registrado.' });
             return;
         }
+        logger_1.default.info('✅ Pago registrado correctamente', { pago: result.rows[0] });
         res.status(201).json({ message: 'Pago registrado con éxito', pago: result.rows[0] });
     }
     catch (error) {
-        logger_1.default.error('❌ Error en el servidor:', error);
-        res.status(500).json({ message: 'Error interno del servidor' });
+        logger_1.default.error('❌ Error en el servidor:', { message: error.message, stack: error.stack });
+        res.status(500).json({ message: 'Error interno del servidor', error: error.message });
     }
 });
 exports.registrarPago = registrarPago;
-// ✅ Obtener todos los pagos registrados
+// ✅ Obtener todos los pagos registrados con mejor manejo de errores
 const obtenerPagos = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         logger_1.default.info('📤 Solicitando lista de pagos...');
         const result = yield database_1.pool.query('SELECT * FROM pagos_gym ORDER BY fecha DESC');
+        if (!result.rows.length) {
+            logger_1.default.warn('⚠️ No hay pagos registrados en la base de datos.');
+            res.status(404).json({ message: 'No hay pagos registrados' });
+            return;
+        }
         logger_1.default.info('✅ Lista de pagos obtenida con éxito.');
         res.json(result.rows);
     }
     catch (error) {
-        logger_1.default.error('❌ Error al obtener pagos:', error);
-        res.status(500).json({ message: 'Error interno del servidor' });
+        logger_1.default.error('❌ Error al obtener pagos:', { message: error.message, stack: error.stack });
+        res.status(500).json({ message: 'Error interno del servidor', error: error.message });
     }
 });
 exports.obtenerPagos = obtenerPagos;

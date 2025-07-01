@@ -1,0 +1,416 @@
+{"level":30,"time":1742896819608,"pid":5784,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1742896819611,"pid":5784,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1742896819614,"pid":5784,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1742896819616,"pid":5784,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1742896819616,"pid":5784,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":30,"time":1742896826387,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1742896826393,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1742896826395,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1742896826397,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1742896826397,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":30,"time":1742896827145,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Conectado a la base de datos"}
+{"level":30,"time":1742896838786,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742896838786,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742896839544,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Rol del usuario 17 actualizado a mantenimiento"}
+{"level":30,"time":1742896839548,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:10:00:39 +0000] \"PUT /admin/users/role HTTP/1.1\" 200 43 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742896839557,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742896839557,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742896839660,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742896839661,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:10:00:39 +0000] \"GET /admin/users HTTP/1.1\" 200 423 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1742940571160,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1742940571161,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:09:31 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1742940599463,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1742940599464,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:09:59 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1742940599467,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1742940599469,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:09:59 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1742940679727,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1742940679728,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:11:19 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1742940679735,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1742940679737,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:11:19 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940716833,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Inicio de sesión exitoso para angelamartinez3337@gmail.com"}
+{"level":30,"time":1742940716834,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:11:56 +0000] \"POST /auth/login HTTP/1.1\" 200 367 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940716858,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940716858,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940717043,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940717045,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:11:57 +0000] \"GET /admin/users HTTP/1.1\" 200 423 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940722189,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940722189,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940722191,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940722191,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940722350,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940722351,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:02 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940722982,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940722983,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:02 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940724624,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940724624,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940724626,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940724626,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940724778,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940724779,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:04 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940724780,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940724780,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:04 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940726372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940726372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940726376,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940726376,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940726522,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940726523,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:06 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940726529,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940726530,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:06 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940728163,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940728163,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940728164,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940728164,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940728333,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940728334,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:08 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940728336,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940728336,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:08 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940741810,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940741810,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940741811,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940741812,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940742539,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940742540,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:22 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940743209,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940743210,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:23 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940744702,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940744702,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940744704,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940744704,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940744843,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940744843,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:24 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940744850,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940744850,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:12:24 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940777170,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940777170,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940785061,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940785061,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940786331,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940786331,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:06 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940789457,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940789457,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940789606,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940789607,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:09 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940793259,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940793260,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940793784,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940793785,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:13 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940796836,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:16 +0000] \"GET /admin/users HTTP/1.1\" - - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940796856,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940797015,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940797015,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940797018,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940797018,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940797110,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940797110,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:17 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940797575,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940797576,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:17 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940798691,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940798691,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940798692,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940798692,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940798791,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940798791,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:18 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940798792,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940798792,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:18 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940800371,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940800371,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940800372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940800372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940800482,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940800483,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:20 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940800483,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940800484,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:13:20 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940846067,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940846067,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940846820,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940846820,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:06 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940859319,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940859319,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940860552,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940860552,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:20 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940881249,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940881249,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940881254,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940881254,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940882384,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940882384,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:42 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940882670,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940882671,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:42 +0000] \"GET /admin/users HTTP/1.1\" 200 423 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940884635,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940884635,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940884636,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940884636,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940884735,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940884736,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:44 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940884767,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940884768,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:44 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940896086,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940896086,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940896088,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940896088,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940896838,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940896838,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:56 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940896848,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940896848,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:56 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940898757,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940898757,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940898759,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940898759,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940898856,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940898857,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:58 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940898857,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940898858,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:14:58 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940900051,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940900051,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940900053,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742940900053,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742940900161,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940900161,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:15:00 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742940900163,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742940900163,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:15:00 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941129806,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941129807,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941134260,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:18:54 +0000] \"GET /admin/users HTTP/1.1\" - - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941134476,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941134476,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941135158,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941135158,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:18:55 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941138986,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941156290,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941156290,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941157711,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941157711,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:17 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941173990,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941173990,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941174928,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941174928,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:34 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941174937,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941174937,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941175035,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941175036,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:35 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941178642,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941178642,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941178739,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941178740,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:38 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941189191,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941189193,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941190186,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941190186,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:50 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941193154,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941193154,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941193156,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941193156,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941193257,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941193258,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:53 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941193919,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941193920,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:53 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941199062,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941199062,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941199064,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941199064,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941199160,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941199161,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:59 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941199167,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941199168,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:19:59 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941216055,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941216055,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941216060,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941216060,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941216684,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941216685,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:20:16 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941216700,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941216700,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:20:16 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941233175,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:20:33 +0000] \"GET /ventas HTTP/1.1\" 404 145 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":30,"time":1742941485337,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941485337,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941485340,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941485340,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941485994,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941485995,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:24:45 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941485998,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941485999,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:24:45 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941522189,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941522189,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941523091,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941523092,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:25:23 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941542919,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941542919,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941544351,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941544352,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:25:44 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941565242,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941565242,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941565929,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941565929,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:05 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941571999,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941571999,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941572101,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941572101,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:12 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941587217,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941587217,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941587942,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941587943,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:27 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941591061,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941591061,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941591157,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941591157,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:31 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941591164,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941591164,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941591413,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941591413,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:31 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941610746,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941610746,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941611457,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941611458,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:51 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941616990,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941616990,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941617088,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941617088,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:26:57 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941619891,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941619891,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941620000,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941620001,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:00 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941643843,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941643843,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941645227,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941645228,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:25 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941646239,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941646239,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941647686,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941647686,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:27 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941650208,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941650208,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941650663,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941650664,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:30 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941652247,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941652247,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941652249,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941652249,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941652359,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941652359,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:32 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941653972,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941653973,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:33 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941673402,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941673402,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941674039,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941674039,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:27:54 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941689541,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941689541,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941689542,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941689542,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941690198,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941690199,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:28:10 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941690200,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941690200,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:28:10 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941701372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941701372,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941701374,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742941701374,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742941702024,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941702024,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:28:22 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742941702057,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742941702058,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [25/Mar/2025:22:28:22 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742957125677,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Inicio de sesión exitoso para angelamartinez3337@gmail.com"}
+{"level":30,"time":1742957125678,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [26/Mar/2025:02:45:25 +0000] \"POST /auth/login HTTP/1.1\" 200 367 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1742957125696,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1742957125696,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1742957125907,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1742957125907,"pid":6157,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [26/Mar/2025:02:45:25 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1743496812214,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1743496812219,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1743496812221,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1743496812225,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1743496812225,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":30,"time":1743496813643,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Conectado a la base de datos"}
+{"level":40,"time":1743497908893,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743497908902,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:08:58:28 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743497908906,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743497908911,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:08:58:28 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743497926841,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743497926844,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:08:58:46 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1743497926847,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743497926848,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:08:58:46 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1743498019193,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"Inicio de sesión exitoso para angelamartinez3337@gmail.com"}
+{"level":30,"time":1743498019195,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:00:19 +0000] \"POST /auth/login HTTP/1.1\" 200 367 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":30,"time":1743498019233,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1743498019233,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1743498019322,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1743498019323,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:00:19 +0000] \"GET /admin/users HTTP/1.1\" 200 423 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1743498041294,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743498041295,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:00:41 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":30,"time":1743498041913,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Acceso permitido para usuario angelamartinez3337@gmail.com con rol admin"}
+{"level":30,"time":1743498041913,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Usuario angelamartinez3337@gmail.com con rol admin accedió correctamente"}
+{"level":30,"time":1743498042587,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"Lista de usuarios obtenida correctamente"}
+{"level":30,"time":1743498042589,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:00:42 +0000] \"GET /admin/users HTTP/1.1\" 304 - \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15\""}
+{"level":40,"time":1743498487884,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743498487885,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:08:07 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743498487889,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743498487891,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:09:08:07 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743527513787,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743527513789,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:17:11:53 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743527513791,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743527513792,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:17:11:53 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743528725478,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743528725478,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:17:32:05 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743528725482,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743528725483,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:17:32:05 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743530650405,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743530650405,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:18:04:10 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743530650409,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743530650410,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:18:04:10 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743533177832,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743533177839,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:18:46:17 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743533177848,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743533177849,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:18:46:17 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743538287726,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743538287727,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:20:11:27 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743538287732,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743538287733,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [01/Apr/2025:20:11:27 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743575670692,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743575670703,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [02/Apr/2025:06:34:30 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743575670731,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743575670733,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [02/Apr/2025:06:34:30 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743647423386,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743647423387,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [03/Apr/2025:02:30:23 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743647423390,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743647423391,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [03/Apr/2025:02:30:23 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743647711351,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743647711352,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [03/Apr/2025:02:35:11 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":40,"time":1743647711354,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Acceso no autorizado desde ::1 - Motivo: Token inválido o expirado"}
+{"level":30,"time":1743647711354,"pid":804,"hostname":"MacBook-Pro-de-Angela.local","msg":"::1 - - [03/Apr/2025:02:35:11 +0000] \"GET /admin/users HTTP/1.1\" 403 41 \"http://localhost:5173/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36\""}
+{"level":30,"time":1751404365874,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751404365878,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751404365881,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751404365884,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751404365884,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":50,"time":1751404366205,"pid":47350,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Error en la conexión a la base de datos:"}
+{"level":30,"time":1751404368645,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751404368653,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751404368654,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751404368658,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751404368658,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":50,"time":1751404369019,"pid":47720,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Error en la conexión a la base de datos:"}
+{"level":30,"time":1751404392498,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751404392501,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751404392503,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751404392509,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751404392509,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":50,"time":1751404392797,"pid":48262,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Error en la conexión a la base de datos:"}
+{"level":30,"time":1751404395648,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751404395654,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751404395658,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751404395661,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751404395661,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":50,"time":1751404395991,"pid":48636,"hostname":"MacBook-Pro-de-Angela.local","msg":"❌ Error en la conexión a la base de datos:"}
+{"level":30,"time":1751406446881,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751406446885,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751406446888,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751406446890,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751406446890,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":30,"time":1751406447369,"pid":79809,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Conectado a la base de datos"}
+{"level":30,"time":1751406449624,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Carpeta de subida ya existe: uploads/"}
+{"level":30,"time":1751406449631,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"🔑 JWT_SECRET cargado:"}
+{"level":30,"time":1751406449633,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Serviendo archivos estáticos en: /Users/angelamartinez/Downloads/origin/uploads"}
+{"level":30,"time":1751406449635,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"🚀 Servidor corriendo en: http://localhost:3000"}
+{"level":30,"time":1751406449635,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"📂 Archivos disponibles en: http://localhost:3000/uploads/"}
+{"level":30,"time":1751406450129,"pid":80232,"hostname":"MacBook-Pro-de-Angela.local","msg":"✅ Conectado a la base de datos"}

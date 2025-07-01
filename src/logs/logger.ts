@@ -17,7 +17,7 @@ const targets: pino.TransportTargetOptions[] = [
 
 if (!isProduction) {
   // Solo en desarrollo, guardamos en archivo
-  const logDirectory = path.join(__dirname, 'logs');
+  const logDirectory = path.join(process.cwd(), 'logs');
   if (!fs.existsSync(logDirectory)) {
     fs.mkdirSync(logDirectory);
   }
@@ -25,8 +25,8 @@ if (!isProduction) {
   targets.push({
     target: 'pino/file',
     options: {
-      destination: path.join(logDirectory, 'historial.log'),
-      mkdir: true
+        destination: path.join(logDirectory, 'historial.log'),
+        mkdir: true
     },
     level: 'info'
   });
